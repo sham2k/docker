@@ -25,5 +25,6 @@ RUN cd /opt && \
 
 COPY conf /opt/alluxio/conf/
 COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
